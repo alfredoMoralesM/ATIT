@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #152874;
+}
+
+.logo{
+    max-width: 5rem;
+}
+
+header{
+    display: flex;
+    background-color: #FFA10B;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+header .academia{
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    padding: 0.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.abrir-menu, .cerrar-menu{
+    display:none;
+}
+
+.carreras{
+    background-color: #152874;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    height: auto;
+
+}
+
+.titulo-iti{
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.5rem;
+    color:#FFA10B;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.texto-iti{
+    color:white;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1rem;
+    height: auto;
+}
+
+.img-lado{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin: 30px;
+    padding:20px;
+}
+
+.forma{
+    position:absolute;
+    height: 600px;
+    transform: rotate(30deg);
+    z-index: -1;
+}
+
+.img-lado .img-carrera{
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.texto-carreras{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(67, 66, 66, 0.473);
+    height: auto;  
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion{
+    background-color: #152874;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    height: 500px;
+    justify-content: space-around;
+}
+
+.titulo-info{
+    text-align: center;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.5rem;
+    color:#FFA10B;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.texto-info{
+    align-items: center;
+    justify-self: center;
+    display: flex;  
+    flex-direction: column;
+    width: 400px;
+    padding: 30px;
+}
+
+.info{
+    background-color: #54524ee5;
+    padding: 20px;
+    color: white;
+}
+
+.info-carrusel{
+    display: flex;
+    align-items: center;
+    background-color: #152874; 
+    height: auto; 
+}
+
+.personal{
+    padding: 15px;
+    background-color: #152874;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    height: auto;
+}
+
+
+@media screen and (max-width: 960px){
+
+    .carreras{
+        grid-template-columns: 1fr;
+    }
+
+    .personal{
+        grid-template-columns: 1fr;
+    }
+    
+
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: 0;
+        margin: 20px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        color: #152874;
+
+    }
+
+    .cerrar-menu{
+        color: white;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top:0;
+        right: 0;
+        background-color: grey;
+        padding: 2rem;
+        bottom: 0;
+        border-radius: 0 0 0 15px;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
+    }
+
+    .nav.activo { 
+        z-index: 10;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .img-lado{
+        margin: 50px;
+    }
+}
+
+
