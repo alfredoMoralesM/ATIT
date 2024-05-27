@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="icon" href="img/atit.jpg" type="image/jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Para los iconos libreria font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="estilos/style.css" type="text/css"> <!--Debe estar después de bootstrap para poder modificar los estilos-->
+
+
+</head>
+<body>
+    <script defer src="script.js"></script>
+   
+
+    <!--Inicio header y barra de navegacion-->
+    <header id="inicio">    
+        <div class="tit">
+          <img class="logo" src="img/atit.jpg" alt="ATIT logo">
+          <span class="text-logo">Academia de Tecnologías
+          <br>
+          de la Información y Telemática</span>
+        </div>
+        
+        <button class="abrir-menu" id="abrir">
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </button>
+  
+  
+        <nav class="nav " id="nav" >
+          <button class="cerrar-menu" id="cerrar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </button>
+          
+          <ul class="nav-list">
+            <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
+            <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
+            <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
+            <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
+            <li><a class="btn btn-primary boton-color" href="#">Proyectos</a></li>  
+            <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
+            <li><a class="btn btn-primary boton-color" href="#">Indicadores</a></li>  
+            <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
+            <li><a class="btn btn-primary" href="#inicio">Galería</a></li>
+            <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>    
+          </ul>
+        </nav>
+  
+      </header>
+  
+      <!--Fin header y barra de navegacion-->
+
+      <div class="galeria">
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria1.jpg" alt="Prueba de Software de Realidad Virtual en Oculus Rift©">
+                            </div>
+
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Prueba de Software de Realidad Virtual en Oculus Rift©</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>  
+
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria2.jpg" alt="Programación de Robots Lego">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Programación de Robots Lego</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>  
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria3.jpg" alt="Tarjetas y componentes Arduino© para Sistemas Distribuidos">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Tarjetas y componentes Arduino© para Sistemas Distribuidos</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>  
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria4.jpg" alt="Laboratorio de Telecomunicaciones ">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Laboratorio de Telecomunicaciones </p>
+                            </div>
+                            
+                        </div>
+
+                    </div>  
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria5.jpg" alt="Laboratorio de Desarrollo de Software">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Laboratorio de Desarrollo de Software</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>  
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria6.jpg" alt="Personal que actualmente colabora en el área de CNT">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Personal que actualmente colabora en el área de CNT</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>  
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria7.jpg" alt="Área de desarrollo y armado de robots LEGO©">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Área de desarrollo y armado de robots LEGO©</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria8.jpg" alt="Laboratorio de Hacking Ético y Computo Forense">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Laboratorio de Hacking Ético y Computo Forense</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria9.jpg" alt="Desarrollo de Aplicaciones Móviles">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Desarrollo de Aplicaciones Móviles</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria10.jpg" alt="Transmisor microondas completo con antena de bocina">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Transmisor microondas completo con antena de bocina</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria11.jpg" alt="Laboratorio de Arquitectura de Computadoras">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Laboratorio de Arquitectura de Computadoras</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria12.jpg" alt="Pruebas de Interacción Humano Computadora">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Pruebas de Interacción Humano Computadora</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria13.jpg" alt="Área de desarrollo y programación de robots.">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Área de desarrollo y programación de robots.</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria14.jpg" alt="Central Telefónica PCM">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Central Telefónica PCM</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria15.jpg" alt="Alumnos destacados">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Alumnos destacados</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria16.jpg" alt="Receptor microondas completo con antena parabólica">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Receptor microondas completo con antena parabólica</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria17.jpg" alt="Ensamblado y programación de Drones">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Armado y uso de Paneles</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria18.jpg" alt="Armado y uso de Paneles">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Ensamblado y programación de Drones</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/UDI.jpg" alt="Unidad de Delitos Informáticos">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Unidad de Delitos Informáticos</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide"> <!--contenedor de imagenes de carrusel-->
+
+                        <div class="icons">
+
+                            <i class="fa-solid fa-circle-arrow-left"></i> <!--icono de flecha para la izquierda-->
+                            <img src="img/atit-removebg-preview.png">
+                            <i class="fa-solid fa-circle-arrow-right"></i> 
+                        </div>
+            
+                        <div class="slider-content">
+
+                            <div class="slider-img">
+                                <img src="img/galeria20.jpg" alt="Simulación Certificación CCNA© (Cisco Certified Networking Associate)">
+                            </div>
+                            
+                            <div class="slider-txt">
+                                <span>Academia de Tecnologías de la Información y Telemática</span>
+                                <p>Simulación Certificación CCNA© (Cisco Certified Networking Associate)</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+    </div>
+
+      <!--Inicio footer-->
+    <section class="footer">
+      
+        <div class="info-footer">
+            <div class="direcciones">
+              <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363</p> 
+        
+              <p>Conmutador: (444) 870 - 21 - 00 </p>
+          
+              <p>Atención Politécnica: politecnica@upslp.edu.mx</p>
+            </div>
+  
+            <div class="enlaces">
+                <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
+                <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
+                <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
+                <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
+                <li><a class="btn btn-primary boton-color" href="#">Proyectos</a></li>  
+                <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
+                <li><a class="btn btn-primary boton-color" href="#">Indicadores</a></li>  
+                <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
+                <li><a class="btn btn-primary boton-color" href="#inicio">Galería</a></li>
+                <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>  
+            </div>
+  
+            <div class="redes-sociales">
+              
+              <p style="text-transform: uppercase;">Siguenos en:</p>
+  
+              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.facebook.com/atit.upslp/about?locale=es_LA"><img height="30px" src="img/facebook-2429746_1280.png">Página de Facebook</a></div>
+              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.instagram.com/capituloiti/"><img height="30px" src="img/instagram-1675670_1280.png">Página de Instagram</a></div>
+              <br>
+              <p style="text-transform: uppercase;">Mas información en:</p>
+  
+              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.upslp.edu.mx/upslp/"><img height="30px" src="img/UPSLP.jpg">Página de la Universidad</a></div>
+  
+            </div>
+        </div>
+  
+        <p style="text-align: center;"> © 2024 Todos los derechos reservados | ATIT | UPSLP</p>
+  
+  
+      </section>
+      <!--Fin footer-->
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true, //para la manita del slider
+            centeredSlides: true, //centrar el carrusel
+            slidesPerView: "auto",
+            loop: true,
+            coverflowEffect:{
+                depth: 200,
+                modifer: 1,
+                slidesShadows: true,
+                rotate: 0,
+                stretch: 0
+            }
+
+        })
+      </script>
+    
+</body>
+</html>
