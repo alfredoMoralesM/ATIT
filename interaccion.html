@@ -192,7 +192,7 @@
 
                 <h2 class="titulo-formulario">Información que desea solicitar</h2>
                 <div class="form-group">
-                    <textarea id="dudas" class="form-control" placeholder="Dejanos conocer tus dudas" required></textarea>
+                    <textarea id="dudas" class="form-control" name="dudas" placeholder="Dejanos conocer tus dudas" required></textarea>
                 </div>
 
                 <div class="botones">
@@ -287,10 +287,7 @@
                 doc.text(`Fuente: ${formData.get('fuente')}`, 10, y);
                 y += 10;
 
-                doc.text('Fecha de solicitud', 10, y);
-                y += 10;
-
-                doc.text(`Fecha: ${formData.get('fecha')}`, 10, y);
+                doc.text(`Fecha de solicitud de información: ${formData.get('fecha')}`, 10, y);
                 y += 10;
 
                 doc.text('Información que desea solicitar', 10, y);
