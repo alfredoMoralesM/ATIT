@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal</title>
-    <link rel="stylesheet" href="estilos/style.css" type="text/css">
-    <link rel="icon" href="img/atit.jpg" type="image/jpeg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilos/style.css" type="text/css"> <!--Debe estar después de bootstrap para poder modificar los estilos-->
-</head>
-<body>
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Personal</title>
+
+      <!--Favicon-->
+      <link rel="icon" href="img/icon.png" type="image/png">
+
+      <!--Framework utilizado Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
+      <!--Hoja de estilos externa-->
+      <link rel="stylesheet" href="estilos/style.css" type="text/css"> <!--Debe estar después de bootstrap para poder modificar los estilos-->
+  </head>
+
+  <body>
     <script defer src="script.js"></script>
     
+    <div id="inicio"></div>
     <!--Inicio header y barra de navegacion-->
-    <header id="inicio">    
+    <header>    
         <div class="tit">
-          <img class="logo" src="img/atit.jpg" alt="ATIT logo">
+          <a href="index.html"><img class="logo" src="img/atit.jpg" alt="ATIT logo"></a>
           <span class="text-logo">Academia de Tecnologías
           <br>
           de la Información y Telemática</span>
@@ -42,12 +50,12 @@
             <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
             <li><a class="btn btn-primary" href="#inicio">Personal</a></li> 
             <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
-            <li><a class="btn btn-primary boton-color" href="#">Proyectos</a></li>  
+            <li><a class="btn btn-primary boton-color" href="proyectos.html">Proyectos</a></li>  
             <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
-            <li><a class="btn btn-primary boton-color" href="#">Indicadores</a></li>  
+            <li><a class="btn btn-primary boton-color" href="indicadores.html">Indicadores</a></li>  
             <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
             <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
-            <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>    
+            <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>   
           </ul>
         </nav>
   
@@ -88,15 +96,13 @@
 
       <div class="docentes">
         <div class="titulo-profesores col-12">Conoce a nuestros profesores</div>
-       
+      
         <div class="card-group">
-          <div class="card">
-              <video width="100%" controls>
-              <source src="videos/profesor-mireles.mp4" type="video/mp4" width="100%">
-              </video>
+          <div class="card carta-completa">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/nWFPusSH8X8" title="M.C. Víctor Manuel Fernández Mireles" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="card-body carta-profesor">
               <div>
-                <h5 class="card-title" style="font-weight: bold;">M.C. Víctor Manuel Fernández Mireles</h5>
+                <h5 class="card-title" style="font-weight: bold;"> M.C. Víctor Manuel Fernández Mireles</h5>
                 <p class="card-text cuerpo-carta">
                   Estudió Ingeniería en Electrónica (Facultad de Ciencias de la UASLP) y la Maestría en Ciencias de la Computación (CICESE en Baja California).
                   <br><br>
@@ -104,7 +110,7 @@
                   <br><br>
                   Sus áreas de especialidad son: la Programación, el manejo de Sistemas Operativos, los Métodos Numéricos, los Sistemas Embebidos, el Internet de las Cosas, los Gráficos por Computadora utilizando UNITY® y el Desarrollo de Video Juegos. A desarrollado proyectos en colaboración con: COPOCyT, APEX Racing Simulators y la UASLP.
                   <br><br>
-                  Certificaciones obtenidas: Microsoft Office Word 2003, Microsoft Office Excel 2003, Microsoft Office Power Point 2003, Microsoft Office Access 2003, Microsoft Office Word Expert , Microsoft Office Excel Expert, Microsoft Office Specialist Master  Instructor, Microsoft Office Word 2007, Microsoft Office Excel 2007, Microsoft Office Power Point 2007, Microsoft Office Access 2007, Microsoft Office Outlook 2007, Adobe Flash CS3 y CS4, Adobe Dreamweaver CS3 y CS4, Certificación en Lenguaje de Programación Java, Certificación del Sistema Operativo Solaris 10 y Certificación en Desarrollo de Videojuegos con Unity.    
+                  Certificaciones obtenidas: Microsoft Office Word 2003, Microsoft Office Excel 2003, Microsoft Office Power Point 2003, Microsoft Office Access 2003, Microsoft Office Word Expert , Microsoft Office Excel Expert, Microsoft Office Specialist Master  Instructor, Microsoft Office Word 2007, Microsoft Office Excel 2007, Microsoft Office Power Point 2007, Microsoft Office Access 2007, Microsoft Office Outlook 2007, Adobe Flash CS3 y CS4, Adobe Dreamweaver CS3 y CS4, Certificación en Lenguaje de Programación Java, Certificación del Sistema Operativo Solaris 10 y Certificación en Desarrollo de Videojuegos con Unity.  
                   <br><br>
                   Actualmente administra la Academia ORACLE de la Universidad Politécnica de San Luis Potosí, para facilitar a nuestros estudiantes los programas de certificación de Java, Solaris y MySQL como una herramienta que permita fortalecer su conocimiento, mejorar sus habilidades y facilitar su inserción en el mercado laboral. Administra también el Programa Universitario de Freescale o NXP, proporcionando una amplia variedad de oportunidades a estudiantes y maestros, ofreciéndoles equipos de desarrollo de hardware/software para su uso en clases, colaborando en proyectos de investigación y brindando oportunidades de empleo a estudiantes. Como parte del programa, se está trabajando con los alumnos para participar en la competencia nacional Freescale CUP de carros autónomos.</p>
               </div>
@@ -113,10 +119,8 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <video width="100%" controls>
-              <source src="videos/maestra-liliana.mp4" type="video/mp4" width="100%">
-              </video>
+          <div class="card carta-completa">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/M_CD5sI28Cw" title="Dra. Liliana Gamez Zavala" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="card-body carta-profesor">
 
               <div>
@@ -152,7 +156,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card carta-completa">
             <img src="img/profesor-rafael.jpg" class="card-img" alt="M.C. Rafael Llamas Contreras" class="img-fluid" >
             
             <div class="card-body carta-profesor">
@@ -165,7 +169,7 @@
                   Del 2002 a la fecha se desempeña como Profesor de Tiempo Completo en la Universidad Politécnica de San Luis Potosí, dentro de la Academia de Tecnologías de la Información y Telemática. Pertenece al cuerpo académico “Tecnologías de la Información y comunicación para el desarrollo y la Competitividad”. Sus áreas de investigación giran en torno a la seguridad informática y el cómputo ubicuo. 
                   <br><br>
 
-                  <img src="img/UDI.jpg" class="card-img profesor-rafael" alt="M.C. Rafael Llamas Contreras" class="img-fluid " >
+                  <img src="img/udi-personal.jpg" class="card-img profesor-rafael" alt="M.C. Rafael Llamas Contreras" class="img-fluid " >
                   
                   <br><br>
                   Ha impartido diversas pláticas relacionadas con aspectos de concientización sobre la seguridad de la información a diversas instituciones públicas, así como en instituciones educativas  públicas y privadas. Es Coordinador  de la Unidad de Delitos Informáticos dentro de la Universidad Politécnica de San Luis Potosí. Actualmente trabaja en conjunto con la secretaría de seguridad pública en un par de proyectos relacionados con las áreas del computo forense y computo móvil. 
@@ -229,16 +233,21 @@
           </div>
 
           <div class="enlaces">
-            <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
-            <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
-            <li><a class="btn btn-primary boton-color" href="#inicio">Personal</a></li> 
-            <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
-            <li><a class="btn btn-primary boton-color" href="#">Proyectos</a></li>  
-            <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
-            <li><a class="btn btn-primary boton-color" href="#">Indicadores</a></li>  
-            <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
-            <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
-            <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>  
+            <div class="izq">
+              <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
+              <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
+              <li><a class="btn btn-primary boton-color" href="#inicio">Personal</a></li> 
+              <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
+              <li><a class="btn btn-primary boton-color" href="proyectos.html">Proyectos</a></li>  
+            </div>
+            
+            <div class="der">
+              <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
+              <li><a class="btn btn-primary boton-color" href="indicadores.html">Indicadores</a></li>  
+              <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
+              <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
+              <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li> 
+            </div>
           </div>
 
           <div class="redes-sociales">
@@ -260,5 +269,8 @@
 
     </section>
     <!--Fin footer-->
-</body>
+
+    <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqcc80d9868dfa9576313731a17b2deec7fe7e59ad5fbe96a80c0c2ad3c7d97f6d" defer></script>
+  
+  </body>
 </html>

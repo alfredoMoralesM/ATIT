@@ -1,167 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayuda</title>
-    <link rel="icon" href="img/atit.jpg" type="image/jpeg">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ayuda</title>
+
+      <!--Favicon-->
+    <link rel="icon" href="img/icon.png" type="image/png">
+
+    <!--Framework utilizado Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilos/style.css" type="text/css">
-</head>
-<style>
-  h1 {
-      text-shadow: 4px 4px 4px #aaa;
-      text-align: center;
-  }
-  .ya{
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url(img/fondo.jpg);
-        background-size: 100vw 100vh;
-        background-repeat: no-repeat;
-  }
-  .capa{
-      position: absolute;
-      background: #3f57b9;
-      opacity: 0.9;
-      padding: 40px 40px;
-      border-radius: 5px;
-      margin-top: 4vh;
- 
-  }
-  .texto{
-      z-index: 1;
-      width: 540px;
-      height: 370px;
-      padding: 20px 20px;
-      font-size: 15px;
-      line-height: 1.5;
-      background-color: white;
-      box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
-      border-radius: 5px;
-  }
-  .textimg{
-      float: left;
-      border-radius: 10px;
-      margin-right: 5px;
-      width: 120px;
-      height: 120px;
-  }
-  .texti{
-      float: right;
-      border-radius: 10px;
-      margin-right: 8px;
-      width: 120px;
-      height: 120px;
-  }
-  a{
-    color: rgb(250, 150, 0);
-  }
-</style>
-</head>
-<body>
-    <script defer src="script.js"></script>
+    
+    <!--Hoja de estilos externa-->
+    <link rel="stylesheet" href="estilos/style.css" type="text/css"> <!--Debe estar después de bootstrap para poder modificar los estilos-->
 
-    <!--Inicio header y barra de navegacion-->
-    <header id="inicio">    
-        <div class="tit">
-          <img class="logo" src="img/atit.jpg" alt="ATIT logo">
-          <span class="text-logo">Academia de Tecnologías
-          <br>
-          de la Información y Telemática</span>
-        </div>
-        
-        <button class="abrir-menu" id="abrir">
-          <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-          </svg>
-        </button>
-  
-        <nav class="nav " id="nav" >
-          <button class="cerrar-menu" id="cerrar">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
-              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+    <style> /*Estilo embebido*/
+      h1 {
+        text-shadow: 4px 4px 4px #aaa;
+        text-align: center;
+      }
+      .ya {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/fondo.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        padding: 0 15px; /* Margin on sides */
+      }
+            .capaAY {
+                background: #3f57b9;
+                opacity: 0.9;
+                padding: 40px 20px; /* Adjusted padding for smaller screens */
+                border-radius: 5px;
+                width: 100%;
+                max-width: 800px; /* Max width for content */
+                margin: 0 auto;
+                box-sizing: border-box; /* Ensure padding is included in element's width */
+            }
+            .textoAY {
+                z-index: 1;
+                width: 100%;
+                max-width: 540px;
+                height: auto;
+                padding: 20px;
+                font-size: 15px;
+                line-height: 1.5;
+                background-color: white;
+                box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
+                border-radius: 5px;
+                box-sizing: border-box; /* Ensure padding is included in element's width */
+            }
+            .textimgAY, .textiAY {
+                border-radius: 10px;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+            .textimgAY {
+                float: left;
+                margin-right: 10px;
+            }
+            .textiAY {
+                float: right;
+                margin-left: 10px;
+            }
+            @media (max-width: 576px) {
+                .textimgAY, .textiAY {
+                    float: none;
+                    display: block;
+                    margin: 0 auto 10px auto;
+                }
+                .textoAY p {
+                    text-align: center;
+                }
+            }
+            @media (max-width: 768px) {
+                .textoAY {
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+    </style>
+  </head>
+
+  <body>
+      <script defer src="script.js"></script>
+
+      <div id="inicio"></div>
+      <!--Inicio header y barra de navegacion-->
+      <header>    
+          <div class="tit">
+            <a href="index.html"><img class="logo" src="img/atit.jpg" alt="ATIT logo"></a>
+            <span class="text-logo">Academia de Tecnologías
+            <br>
+            de la Información y Telemática</span>
+          </div>
+          
+          <button class="abrir-menu" id="abrir">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg>
           </button>
-          
-          <ul class="nav-list">
-            <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
-            <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
-            <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
-            <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
-            <li><a class="btn btn-primary boton-color" href="#">Proyectos</a></li>  
-            <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
-            <li><a class="btn btn-primary boton-color" href="#">Indicadores</a></li>  
-            <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
-            <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
-            <li><a class="btn btn-primary" href="#inicio">Ayuda</a></li>    
-          </ul>
-        </nav>
-      </header>
-      <section id="ayuda">
-      <div class="ya">
-          <div class="capa">
-              <center>
-              <div class="texto">
-                  <h1>Contactos de apoyo</h1>
-                  <img class="textimg" src="img/atit.jpg" alt="No se pudo mostrar la imagen"><p><br><b>Academia de tecnologías de la información y telemática</b><br><a href="tel:444-812-6367">444-812-6367</a><br><a href="mailto:item-irtel@upslp.edu.mx">item-irtel@upslp.edu.mx</a> ó <a href="mailto:iti@upslp.edu.mx">iti@upslp.edu.mx</a> </p>
-                  <br>
-                  <img class="texti" src="img/coordinador.jpg" alt="No se pudo mostrar la imagen"><p style="color: #152874;"><b>Coordinador de Ingeniería en Telemática -Redes y Telecomunicaciones- (ITEM) e Ingenieria en Tecnologías de la Información- (ITI)</b><br><em>Dr. Juan Antonio Cabrera Rico</em><br><a href="mailto:Antonio.cabrera@upslp.edu.mx">Antonio.cabrera@upslp.edu.mx</a></p>
-                    <br>
-                 
-              </div>
-              </center>
-          </div>
-        </div>  
-        </section>
-    <!--Inicio footer-->
-    <section class="footer">
-      
-        <div class="info-footer">
-            <div class="direcciones">
-              <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363</p> 
-        
-              <p>Conmutador: (444) 870 - 21 - 00 </p>
-          
-              <p>Atención Politécnica: politecnica@upslp.edu.mx</p>
-            </div>
-  
-            <div class="enlaces">
+    
+          <nav class="nav " id="nav" >
+            <button class="cerrar-menu" id="cerrar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </button>
+            
+            <ul class="nav-list">
               <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
               <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
               <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
               <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
-              <li><a class="btn btn-primary boton-color" href="#">Proyectos</a></li>  
+              <li><a class="btn btn-primary boton-color" href="proyectos.html">Proyectos</a></li>  
               <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
-              <li><a class="btn btn-primary boton-color" href="#">Indicadores</a></li>  
+              <li><a class="btn btn-primary boton-color" href="indicadores.html">Indicadores</a></li>  
               <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
               <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
-              <li><a class="btn btn-primary boton-color" href="#inicio">Ayuda</a></li>   
+              <li><a class="btn btn-primary" href="#inicio">Ayuda</a></li>    
+            </ul>
+          </nav>
+        </header>
+
+
+        <section id="ayuda">
+          <div class="yaAY">
+              <div class="capaAY">
+                  <center>
+                  <div class="textoAY">
+                      <h1>Contactos de apoyo</h1>
+                      <img class="textimgAY" src="img/atit.jpg" alt="No se pudo mostrar la imagen">
+                      <p><br><b>Academia de tecnologías de la información y telemática</b><br>
+                      <a href="tel:444-812-6367">444-812-6367</a><br>
+                      <a href="mailto:item-irtel@upslp.edu.mx">item-irtel@upslp.edu.mx</a> ó 
+                      <a href="mailto:iti@upslp.edu.mx">iti@upslp.edu.mx</a> 
+                      </p>
+                      <br>
+                      <img class="textiAY" src="img/coordinador.jpg" alt="No se pudo mostrar la imagen">
+                      <p style="color: #152874;">
+                      <b>Coordinador de Ingeniería en Telemática -Redes y Telecomunicaciones- (ITEM) e Ingenieria en Tecnologías de la Información- (ITI)</b><br>
+                      <em>Dr. Juan Antonio Cabrera Rico</em><br>
+                      <a href="mailto:Antonio.cabrera@upslp.edu.mx">Antonio.cabrera@upslp.edu.mx</a>
+                      </p>
+                      <br>
+                  </div>
+                  </center>
+              </div>
+          </div>  
+        </section>
+
+      <!--Inicio footer-->
+      <section class="footer">
+        
+          <div class="info-footer">
+              <div class="direcciones">
+                <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363</p> 
+          
+                <p>Conmutador: (444) 870 - 21 - 00 </p>
+            
+                <p>Atención Politécnica: politecnica@upslp.edu.mx</p>
+              </div>
+    
+              <div class="enlaces">
+                <div class="izq">
+                    <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
+                    <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
+                    <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
+                    <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
+                    <li><a class="btn btn-primary boton-color" href="proyectos.html">Proyectos</a></li>  
+                </div>
+                
+                <div class="der">
+                    <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
+                    <li><a class="btn btn-primary boton-color" href="indicadores.html">Indicadores</a></li>  
+                    <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
+                    <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
+                    <li><a class="btn btn-primary boton-color" href="#inicio">Ayuda</a></li> 
+                </div>  
             </div>
-  
-            <div class="redes-sociales">
-              
-              <p style="text-transform: uppercase;">Siguenos en:</p>
-  
-              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.facebook.com/atit.upslp/about?locale=es_LA"><img height="30px" src="img/facebook-2429746_1280.png">Página de Facebook</a></div>
-              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.instagram.com/capituloiti/"><img height="30px" src="img/instagram-1675670_1280.png">Página de Instagram</a></div>
-              <br>
-              <p style="text-transform: uppercase;">Mas información en:</p>
-  
-              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.upslp.edu.mx/upslp/"><img height="30px" src="img/UPSLP.jpg">Página de la Universidad</a></div>
-  
-            </div>
-        </div>
-  
-        <p style="text-align: center;"> © 2024 Todos los derechos reservados | ATIT | UPSLP</p>
-  
-  
-      </section>
-      <!--Fin footer-->
-  
-</body>
+    
+              <div class="redes-sociales">
+                
+                <p style="text-transform: uppercase;">Siguenos en:</p>
+    
+                <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.facebook.com/atit.upslp/about?locale=es_LA"><img height="30px" src="img/facebook-2429746_1280.png">Página de Facebook</a></div>
+                <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.instagram.com/capituloiti/"><img height="30px" src="img/instagram-1675670_1280.png">Página de Instagram</a></div>
+                <br>
+                <p style="text-transform: uppercase;">Mas información en:</p>
+    
+                <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.upslp.edu.mx/upslp/"><img height="30px" src="img/UPSLP.jpg">Página de la Universidad</a></div>
+    
+              </div>
+          </div>
+    
+          <p style="text-align: center;"> © 2024 Todos los derechos reservados | ATIT | UPSLP</p>
+    
+    
+        </section>
+        <!--Fin footer-->
+        
+        <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqcc80d9868dfa9576313731a17b2deec7fe7e59ad5fbe96a80c0c2ad3c7d97f6d" defer></script>
+
+  </body>
 </html>

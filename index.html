@@ -1,345 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATIT</title>
-    <link rel="icon" href="img/atit.jpg" type="image/jpeg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilos/style.css" type="text/css"> <!--Debe estar después de bootstrap para poder modificar los estilos-->
-  </head>
-<body>
-    <script defer src="script.js"></script>
-    
 
-    <!--Inicio header y barra de navegacion-->
-    <header id="inicio">
-      <div class="tit">
-        <img class="logo" src="img/atit.jpg" alt="ATIT logo">
-        <span class="text-logo">Academia de Tecnologías
-        <br>
-        de la Información y Telemática</span>
-      </div>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ATIT- Academia de Tecnologías de la Información y Telemática</title>
+
+      <!--Favicon-->
+      <link rel="icon" href="img/icon.png" type="image/png">
+
+      <!--Framework utilizado Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       
-      <button class="abrir-menu" id="abrir">
-        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-        </svg>
-      </button>
+      <!--Hoja de estilos externa-->
+      <link rel="stylesheet" href="estilos/style.css" type="text/css"> <!--Debe estar después de bootstrap para poder modificar los estilos-->
+  </head>
 
+  <body>
 
-      <nav class="nav " id="nav" >
-        <button class="cerrar-menu" id="cerrar">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
-            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+      <script defer src="script.js"></script> <!--Enlace al script externo-->
+      
+      <div id="inicio"></div>
+      <!--Inicio header y barra de navegacion-->
+      <header>
+        <div class="tit">
+          <a href="index.html"><img class="logo" src="img/atit.jpg" alt="ATIT logo"></a>
+          <span class="text-logo">Academia de Tecnologías
+          <br>
+          de la Información y Telemática</span>
+        </div>
+        
+        <button class="abrir-menu" id="abrir">
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
           </svg>
         </button>
-        
-        <ul class="nav-list">
-          <li><a class="btn btn-primary" href="#inicio">Inicio</a></li>
-          <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
-          <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
-          <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
-          <li><a class="btn btn-primary boton-color" href="#">Proyectos</a></li>  
-          <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
-          <li><a class="btn btn-primary boton-color" href="#">Indicadores</a></li>  
-          <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
-          <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
-          <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>     
-        </ul>
-      </nav>
-
-    </header>
-
-    <!--Fin header y barra de navegacion-->
 
 
+        <nav class="nav " id="nav" >
+          <button class="cerrar-menu" id="cerrar">
 
-    <!--carrusel de imagenes-->
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      
-      <div class="carousel-inner">
-        <div class="carousel-item active d-item">
-          <img src="img/slider1.jpg" class="d-block w-100 d-img" alt="Slider1">
-          <div class="carousel-caption top-0 mt-4">
-            <p class="mt-5 fs-3 text-uppercase">
-              Descubre la Academia  
-            </p>
-            <h1 class="display-1 fw-bolder text-capitalize">ATIT</h1>
-            <a class="btn btn-primary boton-color px-4 py-2 fs-5 mt-5" href="#info">Información</a>
-          </div>
-        </div>
-
-
-        <div class="carousel-item d-item">
-          <img src="img/slider2.jpg" class="d-block w-100 d-img" alt="Slider2">
-          <div class="carousel-caption top-0 mt-4">
-            <p class="mt-5 fs-3 text-uppercase">
-              Descubre nuestras carreras  
-            </p>
-            <h1 class="display-1 fw-bolder text-capitalize">ATIT</h1>
-            <a class="btn btn-primary boton-color px-4 py-2 fs-5 mt-5" href="carreras.html">Carreras</a>
-          </div>
-        </div>
-
-        <div class="carousel-item d-item">
-          <img src="img/slider3.jpg" class="d-block w-100 d-img" alt="Slider2">
-          <div class="carousel-caption top-0 mt-4">
-            <p class="mt-5 fs-3 text-uppercase">
-              Descubre tu futuro  
-            </p>
-            <h1 class="display-1 fw-bolder text-capitalize">ATIT</h1>
-            <a class="btn btn-primary boton-color px-4 py-2 fs-5 mt-5" href="videos.html">Videos</a>
-          </div>
-        </div>
-        
-      </div>
-
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <!--Fin del carrusel-->
-
-
-    <!--Seccion informacion de inicio-->
-
-    <section class="info-inicio" id="info">
-
-      <div class="que-es">
-        <div class="fondo-texto">
-          <p>¿Quiénes Somos?</p>
-        </div>
-
-        <div class="text-info">
-          La Academia de Tecnologías de la Información y Telemática de la Universidad Politécnica de San Luis
-          Potosí lleva a cabo actividades de promoción de sus programas educativos, así como divulgación de
-          temas en materia de nuevas tecnologías de la información y comunicaciones.
-
-        </div>
-
-      </div>
-
-      <div class="fundacion">
-        <div class="fondo-texto">
-          <p>Objetivo</p>
-        </div>
-        <div class="text-info">
-          Es ofrecer a los estudiantes de nivel medio superior información sobre el mapa curricular de las carreras,
-          las actividades que se desarrollan en la universidad, las competencias que se desarrollan y el campo
-          laboral una vez egresados, esto con el fin de ofrecer una orientación vocacional útil al momento de
-          seleccionar una carrera profesional a través de sesiones informativas y ferias de ingeniería en su plantel
-          o dentro de nuestra Universidad.
-        </div>
-      </div>
-
-      <div class="historia">
-        <div class="fondo-texto">
-          <p>Historia</p>
-        </div>
-
-        <div class="text-info">
-          Junto con las actividades de promoción, la Academia lleva a cabo actividades de divulgación con
-          estudiantes de niveles básicos como lo es preescolar, primaria, secundaria y bachillerato mediante la
-          participación en las Semana Nacional de Ciencia y Tecnología. Con nuestros estudiantes de la
-          Universidad la divulgación se lleva a cabo por medio de conferencias ofrecidas por profesionales internos
-          o externos, expertos en temas tecnologías de la información y telecomunicaciones ya sea del ámbito
-          académico o industrial, quienes les comparten experiencias adquiridas en su trabajo diario. 
-          <br><br>
-        </div>
-      </div>
-    </section>
-
-    <!--vision-->
-
-    <div class="titulo-areas">Visión</div>
-
-    <div class="card text-center coordinador">
-      <div class="card-header tapas-carta">
-        Visión de los Programas de Ingeniería en Tecnologías de la Información y Telemática
-      </div>
-      <div class="card-body ">
-        <div class="card-text cuerpo-carta">
-          La UPSLP y sus programas educativos de Ingeniería en Tecnologías de la Información y de
-          Ingeniería en Telemática entregan a la sociedad alumnos formados con los más altos estándares
-          profesionales:
-          <br><br>
-
-          <ol>
-          <li>Egresados que tienen en su haber las competencias pertinentes a las necesidades de su
-          entorno, y son reconocidos en el ámbito laboral por su alto desempeño y calidad
-          personal;</li>
-          <li>un 40% de ellos realiza estudios de postgrado en el país o en el extranjero;</li>
-          <li>durante su trayectoria académica obtuvieron certificaciones especializadas en el área de
-          TI con reconocimiento internacional;</li>
-          <li>cuentan con un alto nivel de inglés certificado por el British Council;</li>
-          <li>poseen experiencia práctica adquirida en los laboratorios, en el estudio de casos y en su
-          estancia profesional y;</li>
-          <li>con las habilidades de manejo de las nuevas tecnologías de la información y
-          comunicaciones y la capacidad de reconocer el proceso de aprendizaje como una
-          necesidad permanente.</li>
-          </ol>
-
-          <br><br>
-
-          Tiene una planta académica consolidada basada en los más altos estándares:
-
-          <br><br>
-          <ol>
-            <li>Todos los profesores de tiempo completo tienen reconocimiento al Perfil PROMEP;</li>
-            <li>el 40% tiene grado de doctor y pertenece al SNI;</li>
-            <li>mantienen su metodología de trabajo colegiado y además;</li>
-            <li>para la investigación trabajan activamente en cuerpos académicos que participan en
-            redes de investigación nacionales e internacionales;</li>
-            <li>los proyectos son financiados por instituciones públicas y privadas, ésto le permite
-            obtener recursos adicionales;</li>
-            <li>los profesores hora clase mantienen experiencia de trabajo en campo, lo cual les permite
-            aterrizar los conocimientos de forma práctica.</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-
-    <!--Areas de investigacion-->
-
-    <div class="titulo-areas">Lineas de especialidad</div>
-  
-    <div class="accordion" id="mapas-curriculares">
-      <div class="accordion-item mapa-iti">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed boton-iti" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            Soluciones Integrales de Sistemas de Información Interactivos
+            <!--Vector utilizado para el incono de cierre de la barra de navegación en modo hamburguesa-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
           </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#mapas-curriculares">
-          <div class="accordion-body">
-            <ul class="list-group">
-              <li class="list-group-item">Diseño Centrado al Usuario</li>
-              <li class="list-group-item">Pruebas de Usabilidad</li>
-              <li class="list-group-item">Pruebas de Seguridad y Análisis de Penetración Informática</li>
-              <li class="list-group-item">Mejores Prácticas de Ingeniería de Software y Requerimientos</li>
-              <li class="list-group-item">Modelado de Sistemas</li>
-              <li class="list-group-item">Uso de Tecnologías Móviles</li>
-              <li class="list-group-item">Computo Forense</li>
-              <li class="list-group-item">Software Libre</li>
-              <li class="list-group-item">Sistemas Distribuidos</li>
-              <li class="list-group-item">Mejores Prácticas en la Administración de Sistemas de Información</li>
-              <li class="list-group-item">Video Juegos y Aplicaciones de Entretenimiento</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item mapa-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed boton-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Transferencia de Tecnología
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#mapas-curriculares">
-          <div class="accordion-body">
-            <ul class="list-group">
-              <li class="list-group-item">Organización de la Información</li>
-              <li class="list-group-item">Estrategia Tecnológica</li>
-              <li class="list-group-item">Tecnologías de la Información y Comunicaciones con especialidad en Zonas Rurales</li>
-              <li class="list-group-item">Innovación Tecnológica</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item mapa-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed boton-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTwo">
-            Soluciones Integrales de Telecomunicaciones
-          </button>
-        </h2>
-        <div id="collapseTres" class="accordion-collapse collapse" data-bs-parent="#mapas-curriculares">
-          <div class="accordion-body">
-            <ul class="list-group">
-              <ul class="list-group">
-                <li class="list-group-item">Tele-trabajo</li>
-                <li class="list-group-item">Tele-medicina</li>
-                <li class="list-group-item">Simulación y Diseño de Sistemas de Comunicación</li>
-                <li class="list-group-item">Comunicaciones Ópticas</li>
-                <li class="list-group-item">Procesado de Señales</li>
-                <li class="list-group-item">Diseño y análisis de redes de datos</li>
-                <li class="list-group-item">Peritos en Sistemas de Comunicaciones especialidad en sistemas especiales por COFETEL </li>
-              </ul>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-    <!--Fin seccion informacion inicio-->
-
-    <!--Mapa de google-->
-  
-    <div class="mapa">
-      <div class="text-mapa">¿DONDE PUEDES ENCONTRARNOS?</div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.095279667834!2d-100.9868336895677!3d22.122342649238913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f5412c6b56f%3A0xe1b3dea4c6aa1c03!2sUniversidad%20Polit%C3%A9cnica%20de%20San%20Luis%20Potos%C3%AD!5e0!3m2!1ses-419!2smx!4v1716684938645!5m2!1ses-419!2smx" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <!--Inicio footer-->
-    <section class="footer">
-      
-      <div class="info-footer">
-          <div class="direcciones">
-            <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363</p> 
-      
-            <p>Conmutador: (444) 870 - 21 - 00 </p>
-        
-            <p>Atención Politécnica: politecnica@upslp.edu.mx</p>
-          </div>
-
-          <div class="enlaces">
-            <li><a class="btn btn-primary boton-color" href="#inicio">Inicio</a></li>
+          
+          <ul class="nav-list">
+            <li><a class="btn btn-primary" href="#inicio">Inicio</a></li>
             <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
             <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
             <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
-            <li><a class="btn btn-primary boton-color" href="#">Proyectos</a></li>  
+            <li><a class="btn btn-primary boton-color" href="proyectos.html">Proyectos</a></li>  
             <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
-            <li><a class="btn btn-primary boton-color" href="#">Indicadores</a></li>  
+            <li><a class="btn btn-primary boton-color" href="indicadores.html">Indicadores</a></li>  
             <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
             <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
-            <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li> 
+            <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>     
+          </ul>
+        </nav>
+
+      </header>
+
+      <!--Fin header y barra de navegacion-->
+
+
+
+      <!--carrusel de imagenes-->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active d-item">
+            <img src="img/slider1.jpg" class="d-block w-100 d-img" alt="Slider1">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">
+                Descubre la Academia  
+              </p>
+              <h1 class="display-1 fw-bolder text-capitalize">ATIT</h1>
+              <a class="btn btn-primary boton-color px-4 py-2 fs-5 mt-5" href="#info">Información</a>
+            </div>
           </div>
 
-          <div class="redes-sociales">
-            
-            <p style="text-transform: uppercase;">Siguenos en:</p>
 
-            <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.facebook.com/atit.upslp/about?locale=es_LA"><img height="30px" src="img/facebook-2429746_1280.png">Página de Facebook</a></div>
-            <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.instagram.com/capituloiti/"><img height="30px" src="img/instagram-1675670_1280.png">Página de Instagram</a></div>
-            <br>
-            <p style="text-transform: uppercase;">Mas información en:</p>
-
-            <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.upslp.edu.mx/upslp/"><img height="30px" src="img/UPSLP.jpg">Página de la Universidad</a></div>
-
+          <div class="carousel-item d-item">
+            <img src="img/slider2.jpg" class="d-block w-100 d-img" alt="Slider2">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase"> <!--mt (margin-top) fs(font-size)-->
+                Descubre nuestras carreras  
+              </p>
+              <h1 class="display-1 fw-bolder text-capitalize">ATIT</h1> <!--fw (font-weight)-->
+              <a class="btn btn-primary boton-color px-4 py-2 fs-5 mt-5" href="carreras.html">Carreras</a> <!--px (padding-horizontal) py (padding-vertical)-->
+            </div>
           </div>
+
+          <div class="carousel-item d-item">
+            <img src="img/slider3.jpg" class="d-block w-100 d-img" alt="Slider2">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">
+                Descubre tu futuro  
+              </p>
+              <h1 class="display-1 fw-bolder text-capitalize">ATIT</h1>
+              <a class="btn btn-primary boton-color px-4 py-2 fs-5 mt-5" href="videos.html">Videos</a>
+            </div>
+          </div>
+          
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
-      <p style="text-align: center;"> © 2024 Todos los derechos reservados | ATIT | UPSLP</p>
+      <!--Fin del carrusel-->
 
 
-    </section>
-    <!--Fin footer-->
+      <!--Seccion informacion de inicio-->
 
-</body>
+      <section class="info-inicio" id="info">
+
+        <div class="que-es">
+          <div class="fondo-texto">
+            <p>¿Quiénes Somos?</p>
+          </div>
+
+          <div class="text-info">
+            La Academia de Tecnologías de la Información y Telemática de la Universidad Politécnica de San Luis
+            Potosí lleva a cabo actividades de promoción de sus programas educativos, así como divulgación de
+            temas en materia de nuevas tecnologías de la información y comunicaciones.
+
+          </div>
+
+        </div>
+
+        <div class="fundacion">
+          <div class="fondo-texto">
+            <p>Objetivo</p>
+          </div>
+          <div class="text-info">
+            Es ofrecer a los estudiantes de nivel medio superior información sobre el mapa curricular de las carreras,
+            las actividades que se desarrollan en la universidad, las competencias que se desarrollan y el campo
+            laboral una vez egresados, esto con el fin de ofrecer una orientación vocacional útil al momento de
+            seleccionar una carrera profesional a través de sesiones informativas y ferias de ingeniería en su plantel
+            o dentro de nuestra Universidad.
+          </div>
+        </div>
+
+        <div class="historia">
+          <div class="fondo-texto">
+            <p>Historia</p>
+          </div>
+
+          <div class="text-info">
+            Junto con las actividades de promoción, la Academia lleva a cabo actividades de divulgación con
+            estudiantes de niveles básicos como lo es preescolar, primaria, secundaria y bachillerato mediante la
+            participación en las Semana Nacional de Ciencia y Tecnología. Con nuestros estudiantes de la
+            Universidad la divulgación se lleva a cabo por medio de conferencias ofrecidas por profesionales internos
+            o externos, expertos en temas tecnologías de la información y telecomunicaciones ya sea del ámbito
+            académico o industrial, quienes les comparten experiencias adquiridas en su trabajo diario. 
+            <br><br>
+          </div>
+        </div>
+      </section>
+
+      <!--vision-->
+
+      <div class="titulo-areas">Visión</div>
+
+      <div class="card text-center coordinador">
+        <div class="card-header tapas-carta">
+          Visión de los Programas de Ingeniería en Tecnologías de la Información y Telemática
+        </div>
+        <div class="card-body ">
+          <div class="card-text cuerpo-carta">
+            La UPSLP y sus programas educativos de Ingeniería en Tecnologías de la Información y de
+            Ingeniería en Telemática entregan a la sociedad alumnos formados con los más altos estándares
+            profesionales:
+            <br><br>
+
+            <ol>
+            <li>Egresados que tienen en su haber las competencias pertinentes a las necesidades de su
+            entorno, y son reconocidos en el ámbito laboral por su alto desempeño y calidad
+            personal;</li>
+            <li>un 40% de ellos realiza estudios de postgrado en el país o en el extranjero;</li>
+            <li>durante su trayectoria académica obtuvieron certificaciones especializadas en el área de
+            TI con reconocimiento internacional;</li>
+            <li>cuentan con un alto nivel de inglés certificado por el British Council;</li>
+            <li>poseen experiencia práctica adquirida en los laboratorios, en el estudio de casos y en su
+            estancia profesional y;</li>
+            <li>con las habilidades de manejo de las nuevas tecnologías de la información y
+            comunicaciones y la capacidad de reconocer el proceso de aprendizaje como una
+            necesidad permanente.</li>
+            </ol>
+
+            <br><br>
+
+            Tiene una planta académica consolidada basada en los más altos estándares:
+
+            <br><br>
+            <ol>
+              <li>Todos los profesores de tiempo completo tienen reconocimiento al Perfil PROMEP;</li>
+              <li>el 40% tiene grado de doctor y pertenece al SNI;</li>
+              <li>mantienen su metodología de trabajo colegiado y además;</li>
+              <li>para la investigación trabajan activamente en cuerpos académicos que participan en
+              redes de investigación nacionales e internacionales;</li>
+              <li>los proyectos son financiados por instituciones públicas y privadas, ésto le permite
+              obtener recursos adicionales;</li>
+              <li>los profesores hora clase mantienen experiencia de trabajo en campo, lo cual les permite
+              aterrizar los conocimientos de forma práctica.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!--Areas de investigacion-->
+
+      <div class="titulo-areas">Lineas de especialidad</div>
+    
+      <div class="accordion" id="mapas-curriculares">
+        <div class="accordion-item mapa-iti">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed boton-iti" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Soluciones Integrales de Sistemas de Información Interactivos
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#mapas-curriculares">
+            <div class="accordion-body">
+              <ul class="list-group">
+                <li class="list-group-item">Diseño Centrado al Usuario</li>
+                <li class="list-group-item">Pruebas de Usabilidad</li>
+                <li class="list-group-item">Pruebas de Seguridad y Análisis de Penetración Informática</li>
+                <li class="list-group-item">Mejores Prácticas de Ingeniería de Software y Requerimientos</li>
+                <li class="list-group-item">Modelado de Sistemas</li>
+                <li class="list-group-item">Uso de Tecnologías Móviles</li>
+                <li class="list-group-item">Computo Forense</li>
+                <li class="list-group-item">Software Libre</li>
+                <li class="list-group-item">Sistemas Distribuidos</li>
+                <li class="list-group-item">Mejores Prácticas en la Administración de Sistemas de Información</li>
+                <li class="list-group-item">Video Juegos y Aplicaciones de Entretenimiento</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mapa-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed boton-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Transferencia de Tecnología
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#mapas-curriculares">
+            <div class="accordion-body">
+              <ul class="list-group">
+                <li class="list-group-item">Organización de la Información</li>
+                <li class="list-group-item">Estrategia Tecnológica</li>
+                <li class="list-group-item">Tecnologías de la Información y Comunicaciones con especialidad en Zonas Rurales</li>
+                <li class="list-group-item">Innovación Tecnológica</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item mapa-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed boton-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTwo">
+              Soluciones Integrales de Telecomunicaciones
+            </button>
+          </h2>
+          <div id="collapseTres" class="accordion-collapse collapse" data-bs-parent="#mapas-curriculares">
+            <div class="accordion-body">
+              <ul class="list-group">
+                <ul class="list-group">
+                  <li class="list-group-item">Tele-trabajo</li>
+                  <li class="list-group-item">Tele-medicina</li>
+                  <li class="list-group-item">Simulación y Diseño de Sistemas de Comunicación</li>
+                  <li class="list-group-item">Comunicaciones Ópticas</li>
+                  <li class="list-group-item">Procesado de Señales</li>
+                  <li class="list-group-item">Diseño y análisis de redes de datos</li>
+                  <li class="list-group-item">Peritos en Sistemas de Comunicaciones especialidad en sistemas especiales por COFETEL </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!--Fin seccion informacion inicio-->
+
+      <!--Mapa de google-->
+    
+      <div class="mapa">
+        <div class="text-mapa">¿DONDE PUEDES ENCONTRARNOS?</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.095279667834!2d-100.9868336895677!3d22.122342649238913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f5412c6b56f%3A0xe1b3dea4c6aa1c03!2sUniversidad%20Polit%C3%A9cnica%20de%20San%20Luis%20Potos%C3%AD!5e0!3m2!1ses-419!2smx!4v1716684938645!5m2!1ses-419!2smx" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!--Inicio footer-->
+      <section class="footer">
+        
+        <div class="info-footer">
+            <div class="direcciones">
+              <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363</p> 
+        
+              <p>Conmutador: (444) 870 - 21 - 00 </p>
+          
+              <p>Atención Politécnica: politecnica@upslp.edu.mx</p>
+            </div>
+
+            <div class="enlaces">
+              <div class="izq">
+                <li><a class="btn btn-primary boton-color" href="#inicio">Inicio</a></li>
+                <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
+                <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
+                <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
+                <li><a class="btn btn-primary boton-color" href="proyectos.html">Proyectos</a></li>  
+              </div>
+              
+              <div class="der">
+                <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
+                <li><a class="btn btn-primary boton-color" href="indicadores.html">Indicadores</a></li>  
+                <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
+                <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
+                <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li> 
+              </div>
+            </div>
+
+            <div class="redes-sociales">
+              
+              <p style="text-transform: uppercase;">Siguenos en:</p>
+
+              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.facebook.com/atit.upslp/about?locale=es_LA"><img height="30px" src="img/facebook-2429746_1280.png">Página de Facebook</a></div>
+              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.instagram.com/capituloiti/"><img height="30px" src="img/instagram-1675670_1280.png">Página de Instagram</a></div>
+              <br>
+              <p style="text-transform: uppercase;">Mas información en:</p>
+
+              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.upslp.edu.mx/upslp/"><img height="30px" src="img/UPSLP.jpg">Página de la Universidad</a></div>
+
+            </div>
+        </div>
+
+        <p style="text-align: center;"> © 2024 Todos los derechos reservados | ATIT | UPSLP</p>
+
+
+      </section>
+      <!--Fin footer-->
+
+      <!--chat-bot-->
+      <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqcc80d9868dfa9576313731a17b2deec7fe7e59ad5fbe96a80c0c2ad3c7d97f6d" defer></script>
+  
+   </body>
 </html>
-

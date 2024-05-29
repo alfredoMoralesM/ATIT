@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicadores</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="img/icon.png" type="image/png">
+
+    <!--Framework utilizado Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!--Hoja de estilos externa-->
+    <link rel="stylesheet" href="estilos/style.css" type="text/css"> <!--Debe estar después de bootstrap para poder modificar los estilos-->
+    
+    <style> /*Estilo embebido*/
+        .spin-container {
+            perspective: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            background-color: #0080ff;
+            color: white;
+            margin-bottom: 20px; /* Añadir margen inferior */
+            margin: 0 40px; /* Margen en los costados */
+        }
+
+        .spin-image {
+            width: 100px; 
+            animation: spin 3s infinite linear;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .flag {
+            position: relative; /* Cambiar a relative para evitar problemas de desplazamiento */
+            height: 50px;
+            background-color: #0047ab;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            overflow: hidden;
+            animation: unroll 6s forwards;
+            border-radius: 0 20px 20px 0;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+            background-image: linear-gradient(to right, #0047ab, #0080ff);
+            margin: 2% 40px 0 2%; /* Añadir margen inferior para espaciado */
+            padding: 15px;
+        }
+
+        @keyframes unroll {
+            0% {
+                width: 0;
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                width: 400px;
+                opacity: 1;
+            }
+        }
+
+        .flag::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 10px;
+            background: linear-gradient(to top, transparent, #407bcc 50%, transparent);
+        }
+
+        .flag::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -10px;
+            height: 100%;
+            width: 400px;
+            background: linear-gradient(to top, transparent, #83b1f1 5%, transparent);
+        }
+
+        .orange-banner {
+            position: relative;
+            margin: 20px 40px 0 40px;
+            height: 50px;
+            background-color: #ff6600;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            width: 100%;
+            max-width: 30rem;
+            margin: 10px auto;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .carreras2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .texto-carreras, .img-lado {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+
+        .img-lado {
+            margin: 20px 0;
+        }
+
+        .img-carrera, .forma {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .ya .capa .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ya .texto {
+            margin: 10px;
+            width: calc(50% - 20px);
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .redes-sociales {
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .texto-carreras, .img-lado {
+                flex: 1;
+            }
+
+            .ya .texto {
+                width: calc(33.333% - 20px);
+            }
+
+            .footer .info-footer {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap; /* Asegurar que los elementos se envuelvan */
+            }
+
+            .direcciones, .enlaces, .redes-sociales {
+                margin: 10px;
+                flex: 1;
+            }
+        }
+
+        .iti, .itm {
+            display: flex;
+            flex-direction: column; /* Asegura que los elementos dentro de iti e itm se muestren como columnas */
+        }
+    </style>
+</head>
+<body>
+    <script defer src="script.js"></script>
+    
+    <div id="inicio"></div>
+    <!--Inicio header y barra de navegacion-->
+    <header>    
+        <div class="tit">
+            <a href="index.html"><img class="logo" src="img/atit.jpg" alt="ATIT logo"></a>
+          <span class="text-logo">Academia de Tecnologías
+          <br>
+          de la Información y Telemática</span>
+        </div>
+        
+        <button class="abrir-menu" id="abrir">
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </button>
+  
+  
+        <nav class="nav " id="nav" >
+          <button class="cerrar-menu" id="cerrar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </button>
+          
+          <ul class="nav-list">
+            <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
+            <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
+            <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
+            <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
+            <li><a class="btn btn-primary boton-color" href="proyectos.html">Proyectos</a></li>  
+            <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
+            <li><a class="btn btn-primary" href="#inicio">Indicadores</a></li>  
+            <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
+            <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
+            <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>   
+          </ul>
+        </nav>
+  
+      </header>
+  
+      <!--Fin header y barra de navegacion-->
+    <center>
+        <div class="flag">
+            Indicadores de éxito
+        </div>
+        <br>
+        <div class="spin-container">
+            <img src="img/ciees-logo.png" alt="CIEES Logo" class="spin-image">
+            Los Comités Interinstitucionales para la Evaluación de la Educación Superior (CIEES) son un organismo que acredita la calidad de los programas educativos de nivel superior.
+        </div>
+    </center>
+    <div class="container">
+        <div class="iti">
+            <div class="card" style="width: 30rem; background-color: #e77817;">
+                <img src="img/mos-cert.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title titulo-carta">Certificaciones MOS</h5>
+                  <p class="card-text texto-cartas">Uno de los programas más exitosos de certificación en la UPSLP es el de las Certificaciones en Microsoft Office Specialist (MOS), el cual, a la fecha, ha entregado más de 64 mil certificaciones a sus estudiantes, mismas que cuentan con validez internacional y que, además, dan constancia del conocimiento, habilidades y productividad en el manejo de las herramientas de TI correspondientes</p>
+                  <p class="card-text texto-cartas">La Universidad Politécnica ha participado en las eliminatorias regionales y nacionales desde el 2005; a la fecha cuenta con cuatro campeones nacionales en Excel Core, quienes participaron en los campeonatos mundiales: 2012, en Las Vegas; 2013, en Washington D.C.; 2016, en Dallas, Texas y 2019, en Orlando, Florida.</p>
+                </div>
+              </div>
+        </div>
+        
+
+        <div class="item">
+            <div class="card" style="width: 30rem; background-color: #e77817;">
+                <img src="img/its.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title titulo-carta">Certificaciones ITS</h5>
+                  <p class="card-text texto-cartas" >Este programa abarca certificaciones en: Databases, HTML and CSS, Java, JavaScript, Networking, Network Security y Software Development. Este programa fortalece a los Programas Educativos de ITEM-IRTEL e ITI, impactando en la formación profesional de estudiantes, al adquirir las habilidades y competencias necesarias para un excelente desempeño en el campo profesional. A la fecha, se han certificado tanto estudiantes como docentes.</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="item">
+            <div class="card" style="width: 30rem; background-color: #e77817;">
+                <img src="img/unity.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title titulo-carta">Certificaciones con Unity</h5>
+                  <p class="card-text texto-cartas" > La UPSLP ofrece la certificación en VR Developer (Desarrollador de Realidad Virtual) a través de la plataforma de Unity 3D, en colaboración con las compañías Educational Technology Consulting (ETC), y el proveedor de exámenes de certificación, Certiport; siendo la UPSLP quien dio inició la certificación a nivel curricular en Latinoamérica.</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="item">
+            <div class="card" style="width: 30rem; background-color: #e77817;">
+                <img src="img/cambridge-logo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title titulo-carta">Certificación de Cambridge</h5>
+                  <p class="card-text texto-cartas" > La certificación Cambridge permite demostrar los conocimientos adquiridos sobre el idioma inglés, por lo que respalda el progreso de aprendizaje de las personas que tienen un objetivo en el ámbito profesional o académico.</p>
+                  <p class="card-text texto-cartas">Los certificados oficiales para acreditar el nivel de inglés con más <em>prestigio</em> para las empresas son: Exámenes de Cambridge. Especialmente el First (B2), Advanced (C1) y Proficiency (C2). Son válidos en la Unión Europea y también son reconocidos por más de 25.000 universidades, empresas y gobiernos de todo el mundo.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!--Carreras segunda parte-->
+    <section class="carreras2">
+    <div class="texto-carreras">
+          
+        <div class="titulo-iti">Concursos</div>
+            
+          <div class="texto-iti">
+            <h5 style="font-weight: bold; color:#FFA10B;">CONCURSOS INTERNOS:</h5>
+            <ul>
+                <li>Concurso de Robótica, en los años 2018, 2019, 2022; todos al cierre del año en el mes de diciembre y como parte del cierre de actividades del Club de Robótica.</li>
+                <li>Concurso de Programación en los años 2020, 2021 y 2022, en el marco del Foro Nacional de Tecnologías de la Información y del día del programador.</li>
+            </ul>
+            <h5 style="font-weight: bold; color:#FFA10B;">CONCURSOS NACIONALES:</h5>
+            <ul>
+                <li>Torneo Mexicano de Robótica ediciones 2018 y 2019; en los semestres de Primavera.</li>
+                <li>Capture the Flag HackMex 2019, 2022</li>
+            </ul>
+            <h5 style="font-weight: bold; color:#FFA10B;">CONCURSOS ESTATALES:</h5>
+            <ul>
+                <li>Medalla de Estudiantes Ejemplares, cada año desde el 2018 en el cierre del semestre Primavera.</li>
+                <li>Semana de la Ciencia (cada año desde 2018 en el mes de octubre)</li>
+            </ul>
+            <h5 style="font-weight: bold; color:#FFA10B;">CICLOS DE CONFERENCIAS, ENTREGA DE RECONOCIMIENTOS Y CONGRESOS:</h5>
+            <ul>
+                <li>Foro de Tecnologías en coordinación con la empresa Capa3 y el Departamento de Servicios Informáticos ( 2019, 2020, 2021, 2022 en los meses de septiembre y octubre)</li>
+                <li>Foro ITI Anual (2019, 2020, 2021, 2022)</li>
+                <li>Entrega Anual de Certificaciones Oracle, Unity, CISCO, MTA, ITS</li>
+                <li>Cisco Academy Summit (2019,2020,2021, 2022, 2023)</li>
+                <li>Cisco Network Instructor Day (2019, 2020, 2021, 2022, 2023)</li>
+            </ul>
+            </div>
+        </div>
+      
+    </div>
+  
+        <div class="img-lado">
+          <img class="forma" src="img/blob1.png">
+          <img class="img-carrera" src="img/MOs1.png">
+        </div>
+    </section>
+      <section class="carreras2">
+        
+        <div class="texto-carreras">
+          <div class="texto-iti">
+            <h5 style="font-weight: bold; color:#FFA10B;">INTEGRACIÓN Y RECONOCIMIENTOS:</h5>
+            <ul>
+                <li>Curso de Inducción (Cada año en el mes de Agosto desde 2019 a 2023), excepto los años impactados por la pandemia</li>
+                <li>Club de Robótica (Cada año desde el 2019 en el semestre de Otoño), excepto los años impactados por la pandemia.</li>
+                <li>Unidad de delitos Informáticos (Cada año desde 2015, en ambos semestres), excepto los años impactados por la pandemia.</li>
+                <li>Feria De Carreras, Visitas, Cursos y Exposiciones (Cada año de 2015 a 2022), excepto los años impactados por la pandemia.</li>
+                <li>Visitas Industriales Empresas (Una vez por semestre de 2019, a 2023, UPQ, Honeywell, Cerro de Caballos, IPICYT, BMW) , excepto los años impactados por la pandemia.</li>
+                <li>Taller de Preegreso (cada año en el semestre de Otoño de 2018 a 2023), excepto los años impactados por la pandemia.</li>
+                <li>32 Participantes en el evento Medalla a Estudiantes Ejemplares, de los cuáles se obtuvieron 3 Medallas de Estudiantes Ejemplares por parte de la Fundación Trayectoria de Éxito y 9 estudiantes han logrado la patente de reconocimiento.</li>
+            </ul>
+        </div>
+      
+        </div>
+  
+  
+        <div class="img-lado">
+          <img class="forma" src="img/blob2.png">
+          <img class="img-carrera" src="img/MOS2.png">
+        </div>
+  
+      </section>
+
+      <center>
+      <div class="orange-banner">Casos de éxito</div>
+    </center>
+
+    <div class="ya">
+        <div class="capa">
+            <div class="container">
+                <div class="texto">
+                    <img><a href="https://www.upslp.edu.mx/upslp/?p=10327#prettyPhoto"><img src="img/videojuegos.jpg" width="100%" height="120px" alt="No se pudo mostrar la imagen"></a>
+                    <figcaption>Primer lugar en concurso de videojuegos</figcaption>
+                </div>
+                <div class="texto">
+                  <a href="https://www.upslp.edu.mx/upslp/?p=7940#prettyPhoto"><img src="img/coparmex.jpg" width="100%" height="120px" alt="No se pudo mostrar la imagen"></a>
+                  <figcaption>Distincion COPARMEX</figcaption>
+                </div>
+                <div class="texto">
+                  <a href="https://www.upslp.edu.mx/upslp/?p=17355#prettyPhoto"><img src="img/mireles.jpg" width="100%" height="120px" alt="No se pudo mostrar la imagen"></a>
+                  <figcaption>Reconocimiento de UNITY</figcaption>
+                </div>
+                <div class="texto">
+                    <a href="https://pulsoslp.com.mx/slp/ira-un-potosino-a-certamen-mundial-de-microsoft/1510010"><img src="img/MOs1.png" width="100%" height="120px" alt="No se pudo mostrar la imagen"></a>
+                    <figcaption>Alcance mundial</figcaption>
+                </div>
+                <div class="texto">
+                    <a href="https://www.upslp.edu.mx/upslp/?p=18892f"> <img src="img/internacional.png" width="100%" height="120px" alt="No se pudo mostrar la imagen"></a>
+                    <figcaption>Alcance internacional</figcaption>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Inicio footer-->
+    <section class="footer">
+      
+      <div class="info-footer">
+          <div class="direcciones">
+            <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78
+                363</p> 
+      
+            <p>Conmutador: (444) 870 - 21 - 00 </p>
+        
+            <p>Atención Politécnica: politecnica@upslp.edu.mx</p>
+          </div>
+
+          <div class="enlaces">
+            <div class="izq">
+              <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
+              <li><a class="btn btn-primary boton-color" href="carreras.html">Carreras</a></li>  
+              <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
+              <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
+              <li><a class="btn btn-primary boton-color" href="proyectos.html">Proyectos</a></li>  
+            </div>
+            
+            <div class="der">
+              <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
+              <li><a class="btn btn-primary boton-color" href="#inicio">Indicadores</a></li>  
+              <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
+              <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
+              <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li> 
+            </div>  
+        </div>
+
+          <div class="redes-sociales">
+            
+            <p style="text-transform: uppercase;">Siguenos en:</p>
+
+            <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.facebook.com/atit.upslp/about?locale=es_LA"><img height="30px" src="img/facebook-2429746_1280.png">Página de Facebook</a></div>
+            <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.instagram.com/capituloiti/"><img height="30px" src="img/instagram-1675670_1280.png">Página de Instagram</a></div>
+            <br>
+            <p style="text-transform: uppercase;">Mas información en:</p>
+
+            <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.upslp.edu.mx/upslp/"><img height="30px" src="img/UPSLP.jpg">Página de la Universidad</a></div>
+
+          </div>
+      </div>
+
+      <p style="text-align: center;"> © 2024 Todos los derechos reservados | ATIT | UPSLP</p>
+
+
+    </section>
+    <!--Fin footer-->
+
+    <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqcc80d9868dfa9576313731a17b2deec7fe7e59ad5fbe96a80c0c2ad3c7d97f6d" defer></script>
+
+</body>
+</html>

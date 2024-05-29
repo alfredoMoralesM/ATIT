@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carreras</title>
-    <link rel="stylesheet" href="estilos/style.css" type="text/css">
-    <link rel="icon" href="img/atit.jpg" type="image/jpeg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilos/style.css" type="text/css"> <!--Debe estar después de bootstrap para poder modificar los estilos-->
-</head>
-<body>
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Carreras</title>
+
+      <!--Favicon-->
+      <link rel="icon" href="img/icon.png" type="image/png">
+
+      <!--Framework utilizado Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
+      <!--Hoja de estilos externa-->
+      <link rel="stylesheet" href="estilos/style.css" type="text/css"> <!--Debe estar después de bootstrap para poder modificar los estilos-->
+  </head>
+
+  <body>
+
     <script defer src="script.js"></script>
     
-
+    <div id="inicio"></div>
     <!--Inicio header y barra de navegacion-->
-    <header id="inicio">    
+    <header>    
         <div class="tit">
-          <img class="logo" src="img/atit.jpg" alt="ATIT logo">
+          <a href="index.html"><img class="logo" src="img/atit.jpg" alt="ATIT logo"></a>
           <span class="text-logo">Academia de Tecnologías
           <br>
           de la Información y Telemática</span>
@@ -43,12 +51,12 @@
             <li><a class="btn btn-primary" href="#inicio">Carreras</a></li>  
             <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
             <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
-            <li><a class="btn btn-primary boton-color" href="#">Proyectos</a></li>  
+            <li><a class="btn btn-primary boton-color" href="proyectos.html">Proyectos</a></li>  
             <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
-            <li><a class="btn btn-primary boton-color" href="#">Indicadores</a></li>  
+            <li><a class="btn btn-primary boton-color" href="indicadores.html">Indicadores</a></li>  
             <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
             <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
-            <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>    
+            <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>     
           </ul>
         </nav>
   
@@ -56,233 +64,239 @@
   
       <!--Fin header y barra de navegacion-->
 
-    <!--Carreras-->
-    <section class="carreras" id="carreras">
+      <!--Carreras-->
+      <section class="carreras" id="carreras">
 
-        <div class="iti">
-            <div class="card" style="width: 30rem; background-color: #e77817;">
-                <img src="img/baner-iti.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title titulo-carta">Ingeniería en Tecnologías de la Información</h5>
-                  <p class="card-text texto-cartas">El Ingeniero en Tecnologías de la Información aplica sus sólidos conocimientos al diseño, desarrollo e instrumentación de soluciones informáticas que requieren las organizaciones, atendiendo las necesidades humanas derivadas de la interacción con la computadora. Es competente para mantener equipos de cómputo 
-                    operando eficientemente y ofrece al usuario soluciones integrales a los problemas asociados con el área computacional.</p>
-                  <a href="#mapas-curriculares" class="btn btn-primary">Mapa curricular</a>
+          <div class="iti">
+              <div class="card" style="width: 30rem; background-color: #e77817;">
+                  <img src="img/baner-iti.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title titulo-carta">Ingeniería en Tecnologías de la Información</h5>
+                    <p class="card-text texto-cartas">El Ingeniero en Tecnologías de la Información aplica sus sólidos conocimientos al diseño, desarrollo e instrumentación de soluciones informáticas que requieren las organizaciones, atendiendo las necesidades humanas derivadas de la interacción con la computadora. Es competente para mantener equipos de cómputo 
+                      operando eficientemente y ofrece al usuario soluciones integrales a los problemas asociados con el área computacional.</p>
+                    <a href="#mapas-curriculares" class="btn btn-primary">Mapa curricular</a>
+                  </div>
                 </div>
-              </div>
-        </div>
-        
+          </div>
+          
 
-        <div class="item">
-            <div class="card" style="width: 30rem; background-color: #e77817;">
-                <img src="img/baner-item.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title titulo-carta">Ingeniería en Telemática</h5>
-                  <p class="card-text texto-cartas" > Un ingeniero en telemática dispone de un conjunto de habilidades y capacidades para poder gestionar y dirigir proyectos en las áreas del conocimiento que comprenden la carrera, principalmente en los sectores de las telecomunicaciones y de las tecnologías de la información.
-                    Los estudiantes de Ingeniería en telemática tienen la oportunidad de complementar las actividades de sus clases cotidianas al hacer uso de laboratorios especializados en las áreas de telecomunicaciones, cableado estructurado, seguridad informática, robótica y el desarrollo de software especializado.</p>
-                  <a href="#mapas-curriculares" class="btn btn-primary">Mapa curricular</a>
+          <div class="item">
+              <div class="card" style="width: 30rem; background-color: #e77817;">
+                  <img src="img/baner-item.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title titulo-carta">Ingeniería en Telemática</h5>
+                    <p class="card-text texto-cartas" > Un ingeniero en telemática dispone de un conjunto de habilidades y capacidades para poder gestionar y dirigir proyectos en las áreas del conocimiento que comprenden la carrera, principalmente en los sectores de las telecomunicaciones y de las tecnologías de la información.
+                      Los estudiantes de Ingeniería en telemática tienen la oportunidad de complementar las actividades de sus clases cotidianas al hacer uso de laboratorios especializados en las áreas de telecomunicaciones, cableado estructurado, seguridad informática, robótica y el desarrollo de software especializado.</p>
+                    <a href="#mapas-curriculares" class="btn btn-primary">Mapa curricular</a>
+                  </div>
                 </div>
+          </div>
+      </section>
+
+
+
+      <!--Carreras segunda parte-->
+      <section class="carreras2" id="iti">
+
+          <div class="texto-carreras">
+            
+            <div class="titulo-iti">Ingeniería en Tecnologías de la Información</div>
+              
+            <div class="texto-iti">
+              <h5 style="font-weight: bold; color:#FFA10B;">Perfil de Egreso</h5>
+              
+              <p>El Ingeniero en Tecnologías de la Información tiene los conocimientos necesarios de software y hardware en interacción con el factor humano, para ofrecer una solución integral a los problemas asociados con el área computacional.</p>
+              
+              <h5 style="font-weight: bold; color:#FFA10B;">Campo de trabajo</h5>
+              <p>Un Ingeniero en Tecnologías de la Información tiene la posibilidad de desarrollarse en industrias dedicadas tanto a la transformación como a los servicios, siempre buscando la mejora. Por lo anterior puede contratarse como: </p>
+              
+              <ul>
+              
+                  <li>Desarrollador de Programa de Software.</li>
+                  
+                  <li>Administrador de Bases de Datos.</li>
+                  
+                  <li>Administrador de Proyectos TI.</li>
+                  
+                  <li>Mantenimiento y Operación de Redes.</li>
+                  
+                  <li>Gerencia o Administración de Sistemas.</li>
+
+                  <li> Administrador de Servidores.</li>
+
+                  <li>Webmaster o Diseño Web.</li>
+
+                  <li>Telecomunicaciones y Sistemas Móviles.</li>
+                  
+              </ul>
+          
+            </div>
+        
+          </div>
+    
+          <div class="img-lado">
+            <img class="forma" src="img/blob1.svg">
+            <img class="img-carrera1" src="img/iti-carrera.jpg" >
+          </div>
+    
+        </section>
+
+        <section class="carreras2" id="item">
+          
+          <div class="texto-carreras">
+            
+            <div class="titulo-iti">Ingeniería en Telemática</div>
+              
+            <div class="texto-iti">
+              <h5 style="font-weight: bold; color:#FFA10B;">Perfil de Egreso</h5>
+              
+              <p>El Ingeniero en Telemática combina los conocimientos y habilidades adquiridos en los campos de las telecomunicaciones y la informática, para analizar, diseñar, desarrollar e implantar soluciones que permitan la transmisión, procesamiento, almacenamiento y utilización de la información que se maneja en la operación y administración económica y eficiente de redes telemáticas, así como en su mantenimiento y en actualización de la tecnología existente.</p>
+              
+              <h5 style="font-weight: bold; color:#FFA10B;">Campo de trabajo</h5>
+              Los egresados de la carrera de Ingeniería en Telemática tienen la oportunidad de integrarse a múltiples sectores productivos como lo son:
+              
+              <ul>
+              
+                  <li>La industria de las telecomunicaciones.</li>
+                  
+                  <li>La industria de las tecnologías de la información.</li>
+                  
+                  <li>La industria de la electrónica.</li>
+                  
+                  <li>Empresas de cualquier sector que demanden o requieran la gestión de infraestructura de telecomunicaciones y de redes, así como la gestión de servicios de las tecnologías de la información.</li>
+                  
+                  <li>Instituciones publicas</li>
+                  
+              </ul>
+          </div>
+        
+          </div>
+    
+    
+          <div class="img-lado">
+            <img class="forma" src="img/blob2.svg">
+            <img class="img-carrera2" src="img/ITEM.jpg">
+          </div>
+    
+        </section>
+
+        <!--mision de las carreras-->
+        <section class="mision">
+          <div class="card text-center coordinador">
+            <div class="card-header tapas-carta">
+              Misión del Programa Educativo de la Carrera de Ingeniería en en Tecnologías de la Información
+            </div>
+            <div class="card-body ">
+              <div class="card-text cuerpo-carta">
+                El Programa Educativo de la carrera de Ingeniería en Tecnologías de la Información está
+                comprometido con la excelencia en la formación integral y humana, y con el aprendizaje, el
+                desarrollo y aplicación del conocimiento en los campos de desarrollo e implementación de software,
+                ofreciendo una solución integral a los problemas asociados con el área computacional. Esta
+                comprometido con la sociedad para mantener una oferta educativa pertinente en el área y
+                desarrollar investigación aplicada involucrando alumnos en la solución de problemas de la
+                sociedad.
               </div>
-        </div>
-    </section>
-
-
-
-    <!--Carreras segunda parte-->
-    <section class="carreras2" id="iti">
-
-        <div class="texto-carreras">
-          
-          <div class="titulo-iti">Ingeniería en Tecnologías de la Información</div>
-            
-          <div class="texto-iti">
-            <h5 style="font-weight: bold; color:#FFA10B;">Perfil de Egreso</h5>
-            
-            <p>El Ingeniero en Tecnologías de la Información tiene los conocimientos necesarios de software y hardware en interacción con el factor humano, para ofrecer una solución integral a los problemas asociados con el área computacional.</p>
-            
-            <h5 style="font-weight: bold; color:#FFA10B;">Campo de trabajo</h5>
-            <p>Un Ingeniero en Tecnologías de la Información tiene la posibilidad de desarrollarse en industrias dedicadas tanto a la transformación como a los servicios, siempre buscando la mejora. Por lo anterior puede contratarse como: </p>
-            
-            <ul>
-            
-                <li>Desarrollador de Programa de Software.</li>
-                
-                <li>Administrador de Bases de Datos.</li>
-                
-                <li>Administrador de Proyectos TI.</li>
-                
-                <li>Mantenimiento y Operación de Redes.</li>
-                
-                <li>Gerencia o Administración de Sistemas.</li>
-
-                <li> Administrador de Servidores.</li>
-
-                <li>Webmaster o Diseño Web.</li>
-
-                <li>Telecomunicaciones y Sistemas Móviles.</li>
-                
-            </ul>
-        
-          </div>
-      
-        </div>
-  
-        <div class="img-lado">
-          <img class="forma" src="img/blob1.svg">
-          <img class="img-carrera1" src="img/iti.jpg" >
-        </div>
-  
-      </section>
-
-      <section class="carreras2" id="item">
-        
-        <div class="texto-carreras">
-          
-          <div class="titulo-iti">Ingeniería en Telemática</div>
-            
-          <div class="texto-iti">
-            <h5 style="font-weight: bold; color:#FFA10B;">Perfil de Egreso</h5>
-            
-            <p>El Ingeniero en Telemática combina los conocimientos y habilidades adquiridos en los campos de las telecomunicaciones y la informática, para analizar, diseñar, desarrollar e implantar soluciones que permitan la transmisión, procesamiento, almacenamiento y utilización de la información que se maneja en la operación y administración económica y eficiente de redes telemáticas, así como en su mantenimiento y en actualización de la tecnología existente.</p>
-            
-            <h5 style="font-weight: bold; color:#FFA10B;">Campo de trabajo</h5>
-             Los egresados de la carrera de Ingeniería en Telemática tienen la oportunidad de integrarse a múltiples sectores productivos como lo son:
-            
-            <ul>
-            
-                <li>La industria de las telecomunicaciones.</li>
-                
-                <li>La industria de las tecnologías de la información.</li>
-                
-                <li>La industria de la electrónica.</li>
-                
-                <li>Empresas de cualquier sector que demanden o requieran la gestión de infraestructura de telecomunicaciones y de redes, así como la gestión de servicios de las tecnologías de la información.</li>
-                
-                <li>Instituciones publicas</li>
-                
-            </ul>
-        </div>
-      
-        </div>
-  
-  
-        <div class="img-lado">
-          <img class="forma" src="img/blob2.svg">
-          <img class="img-carrera2" src="img/ITEM.jpg">
-        </div>
-  
-      </section>
-
-      <!--mision de las carreras-->
-      <section class="mision">
-        <div class="card text-center coordinador">
-          <div class="card-header tapas-carta">
-            Misión del Programa Educativo de la Carrera de Ingeniería en en Tecnologías de la Información
-          </div>
-          <div class="card-body ">
-            <div class="card-text cuerpo-carta">
-              El Programa Educativo de la carrera de Ingeniería en Tecnologías de la Información está
-              comprometido con la excelencia en la formación integral y humana, y con el aprendizaje, el
-              desarrollo y aplicación del conocimiento en los campos de desarrollo e implementación de software,
-              ofreciendo una solución integral a los problemas asociados con el área computacional. Esta
-              comprometido con la sociedad para mantener una oferta educativa pertinente en el área y
-              desarrollar investigación aplicada involucrando alumnos en la solución de problemas de la
-              sociedad.
             </div>
           </div>
-        </div>
-  
-        <div class="card text-center coordinador">
-          <div class="card-header tapas-carta">
-            Misión del Programa Educativo de la Carrera de Ingeniería en Telemática
-          </div>
-          <div class="card-body ">
-            <div class="card-text cuerpo-carta">
-              El Programa Educativo de la carrera de Ingeniería en Telemática está comprometido con la
-              excelencia en la formación integral y humana, y con el aprendizaje, el desarrollo y aplicación del
-              conocimiento en los campos de las telecomunicaciones y la informática. Esta comprometido con la
-              sociedad para mantener una oferta educativa pertinente en el área y desarrollar investigación
-              aplicada involucrando alumnos en la solución de problemas de la sociedad.
+    
+          <div class="card text-center coordinador">
+            <div class="card-header tapas-carta">
+              Misión del Programa Educativo de la Carrera de Ingeniería en Telemática
             </div>
-        </div>
-  
-      </section>
+            <div class="card-body ">
+              <div class="card-text cuerpo-carta">
+                El Programa Educativo de la carrera de Ingeniería en Telemática está comprometido con la
+                excelencia en la formación integral y humana, y con el aprendizaje, el desarrollo y aplicación del
+                conocimiento en los campos de las telecomunicaciones y la informática. Esta comprometido con la
+                sociedad para mantener una oferta educativa pertinente en el área y desarrollar investigación
+                aplicada involucrando alumnos en la solución de problemas de la sociedad.
+              </div>
+          </div>
+    
+        </section>
 
-    <!--mapas curriculares-->
+      <!--mapas curriculares-->
 
-    <div class="accordion" id="mapas-curriculares">
-        <div class="accordion-item mapa-iti">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed boton-iti" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Mapa Curricular Ingeniería en Tecnología de la Información
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#mapas-curriculares">
-            <div class="accordion-body">
-              <img src="img/MapaCurrITI.png" width="100%">
+      <div class="accordion" id="mapas-curriculares">
+          <div class="accordion-item mapa-iti">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed boton-iti" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Mapa Curricular Ingeniería en Tecnología de la Información
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#mapas-curriculares">
+              <div class="accordion-body">
+                <img src="img/MapaCurrITI.png" width="100%">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item mapa-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed boton-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Mapa Curricular Ingeniería en Telemática
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#mapas-curriculares">
-            <div class="accordion-body">
-                <img src="img/MapaCurrTelematica.png" width="100%">
+          <div class="accordion-item mapa-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed boton-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Mapa Curricular Ingeniería en Telemática
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#mapas-curriculares">
+              <div class="accordion-body">
+                  <img src="img/MapaCurrTelematica.png" width="100%">
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-    <!--Inicio footer-->
-    <section class="footer">
-      
-      <div class="info-footer">
-          <div class="direcciones">
-            <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363</p> 
-      
-            <p>Conmutador: (444) 870 - 21 - 00 </p>
+      <!--Inicio footer-->
+      <section class="footer">
         
-            <p>Atención Politécnica: politecnica@upslp.edu.mx</p>
-          </div>
+        <div class="info-footer">
+            <div class="direcciones">
+              <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363</p> 
+        
+              <p>Conmutador: (444) 870 - 21 - 00 </p>
+          
+              <p>Atención Politécnica: politecnica@upslp.edu.mx</p>
+            </div>
 
-          <div class="enlaces">
-            <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
-            <li><a class="btn btn-primary boton-color" href="#inicio">Carreras</a></li>  
-            <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
-            <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
-            <li><a class="btn btn-primary boton-color" href="#">Proyectos</a></li>  
-            <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
-            <li><a class="btn btn-primary boton-color" href="#">Indicadores</a></li>  
-            <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
-            <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
-            <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li>  
-          </div>
+            <div class="enlaces">
+              <div class="izq">
+                <li><a class="btn btn-primary boton-color" href="index.html">Inicio</a></li>
+                <li><a class="btn btn-primary boton-color" href="#inicio">Carreras</a></li>  
+                <li><a class="btn btn-primary boton-color" href="personal.html">Personal</a></li> 
+                <li><a class="btn btn-primary boton-color" href="residencias.html">Residencias</a></li> 
+                <li><a class="btn btn-primary boton-color" href="proyectos.html">Proyectos</a></li>  
+              </div>
+              
+              <div class="der">
+                <li><a class="btn btn-primary boton-color" href="videos.html">Videos</a></li>  
+                <li><a class="btn btn-primary boton-color" href="indicadores.html">Indicadores</a></li>  
+                <li><a class="btn btn-primary boton-color" href="interaccion.html">Interacción</a></li>
+                <li><a class="btn btn-primary boton-color" href="galeria.html">Galería</a></li>
+                <li><a class="btn btn-primary boton-color" href="ayuda.html">Ayuda</a></li> 
+              </div>
+            </div>
 
-          <div class="redes-sociales">
-            
-            <p style="text-transform: uppercase;">Siguenos en:</p>
+            <div class="redes-sociales">
+              
+              <p style="text-transform: uppercase;">Siguenos en:</p>
 
-            <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.facebook.com/atit.upslp/about?locale=es_LA"><img height="30px" src="img/facebook-2429746_1280.png">Página de Facebook</a></div>
-            <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.instagram.com/capituloiti/"><img height="30px" src="img/instagram-1675670_1280.png">Página de Instagram</a></div>
-            <br>
-            <p style="text-transform: uppercase;">Mas información en:</p>
+              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.facebook.com/atit.upslp/about?locale=es_LA"><img height="30px" src="img/facebook-2429746_1280.png">Página de Facebook</a></div>
+              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.instagram.com/capituloiti/"><img height="30px" src="img/instagram-1675670_1280.png">Página de Instagram</a></div>
+              <br>
+              <p style="text-transform: uppercase;">Mas información en:</p>
 
-            <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.upslp.edu.mx/upslp/"><img height="30px" src="img/UPSLP.jpg">Página de la Universidad</a></div>
+              <div class="redes"><a class="btn btn-primary boton-color" style="text-decoration: none; color:white;" href="https://www.upslp.edu.mx/upslp/"><img height="30px" src="img/UPSLP.jpg">Página de la Universidad</a></div>
 
-          </div>
-      </div>
+            </div>
+        </div>
 
-      <p style="text-align: center;"> © 2024 Todos los derechos reservados | ATIT | UPSLP</p>
-
-
-    </section>
-    <!--Fin footer-->
+        <p style="text-align: center;"> © 2024 Todos los derechos reservados | ATIT | UPSLP</p>
 
 
-</body>
+      </section>
+      <!--Fin footer-->
+
+      <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqcc80d9868dfa9576313731a17b2deec7fe7e59ad5fbe96a80c0c2ad3c7d97f6d" defer></script>
+
+  </body>
 </html>
